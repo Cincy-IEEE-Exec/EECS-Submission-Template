@@ -1,0 +1,114 @@
+\documentclass[./subfile.tex]{subfiles}
+
+\title{EECS Submission Template}
+% The \IEEEmembership command is being used for a different purpose here.
+% Please replace it with Degree, Magor
+% The '`' characters are telling LaTeX to insert a space, but don't ever insert a new line there.
+% This will make it look better, we swear
+\author{
+    Tyler~Westland,~\IEEEmembership{PhD,~Comp.~Sci.,}
+    Other~Author,~\IEEEmembership{BS,~Elec.~Eng.}
+}
+
+\begin{document}
+    % DO NOT EDIT/REMOVE
+    \maketitle
+
+    % As a general rule, do not put math, special symbols or citations
+    % in the abstract or keywords.
+    \begin{abstract}
+        \LaTeX{} is an academic standard for journal submissions.
+        This template article will not only shows what an article might look like, but will answer some questions about how to use \LaTeX.
+    \end{abstract}
+
+    \section{Introduction}
+        % The very first letter is a 2 line initial drop letter followed
+        % by the rest of the first word in caps.
+        % 
+        % form to use if the first word consists of a single letter:
+        % \IEEEPARstart{A}{demo} file is ....
+        % 
+        % form to use if you need the single drop letter followed by
+        % normal text (unknown if ever used by the IEEE):
+        % \IEEEPARstart{A}{}demo file is ....
+        % 
+        % Some journals put the first two words in caps:
+        % \IEEEPARstart{T}{his demo} file is ....
+        % 
+        % Here we have the typical use of a "T" for an initial drop letter
+        % and "HIS" in caps to complete the first word.
+        \IEEEPARstart{T}{his} is the template for the EECS Student Magazine edited by UC IEEE.
+        To get started with this template:
+        \begin{enumerate}
+            \item Register for an account on Overleaf:  \url{https://www.overleaf.com/register}.
+            \item Open the menu, in the top left corner.
+            \item Select "Copy Project", under "Actions".
+            \item Read this document to learn what is filler/guide and what can be replaced with your awesome project.
+        \end{enumerate}
+        
+        To submit your finished product we would appreciate a zip file of your project sent to our editor.
+        \begin{enumerate}
+            \item Open the menu, in the top left corner.
+            \item Click "Source", under "Downloads".
+            \item Email the zip file to our edito at execieee@gmail.com.
+        \end{enumerate}
+        
+    \section{Some \LaTeX{} tips}
+    \subsection{Where do I get answers for my \LaTeX{} questions?}
+        You have a few options:
+        \begin{itemize}
+            \item Read \citetitle{lamport1994latex}\cite{lamport1994latex} from \citeyear{lamport1994latex}
+                \begin{itemize}
+                    \item Probably outdated though.
+                \end{itemize}
+            \item Read this document
+                \begin{itemize}
+                    \item Contains some pointers and examples, but not answers to edge questions.
+                \end{itemize}
+            \item Visit \url{https://www.overleaf.com/learn/latex/Main_Page} and \url{https://www.overleaf.com/learn/latex/Main_Page}.
+                \begin{itemize}
+                    \item Contains documentation, and lots of answered questions.
+                \end{itemize}
+            \item Email the editor at execieee@gmail.com.
+                \begin{itemize}
+                    \item The editor probably just fakes expertise by using Stack Exchange, but is a human who will kindly answer your emails for help.
+                \end{itemize}
+        \end{itemize}
+        
+    \subsection{Inserting Figures}
+        Inserting figures in \LaTeX{} can be a hassle as it is unlike any other method you have seen before.
+        Please see the below example.
+        \begin{figure}[!h]
+            \centering
+            \includegraphics[height=1.0in]{./img/IEEE_logo}
+            \caption{The IEEE logo}
+            \label{fig_ieeeLogo}
+        \end{figure}
+        
+        Still have questions?
+        \url{https://www.overleaf.com/learn/latex/Inserting_Images}
+    
+    \subsection{Making Citations}
+        Citations, references, whatever you call it \LaTeX{} does it better.
+        This is done by using the \textit{\\cite\{\(<\)articleLabel\(>\)\}} command.
+        Note that \(<\)articleLabel\(>\) is a short name given to whatever you are referencing.
+        When your \LaTeX{} file is compiled it will be replaced with the proper reference number.
+        Simple, no more mismatched numbers.
+        
+        Another frustration in citations is the formatting, because it is tedious and a computer should do it.
+        \LaTeX{} agrees, so it does it for you!
+        You simply need to put the properly formatted information in "bibliography.bib".
+        BibTex (a package in \LaTeX{} will take care of the rest).
+        Making the properly formatted information is tedious as well, so get a computer to do it for you. The most common way to do this is to search for the article on \url{https://scholar.google.com}. 
+        It will offer a properly formatted citation in many formats, as well as Bibtex.
+        
+        Still have questions?
+        See the article on Overleaf \url{https://www.overleaf.com/learn/latex/Articles/Getting_started_with_BibLaTeX}.
+        
+    \section{Conclusion}
+        We hope this template offers guidance on how to use \LaTeX.
+        If you need more info on what the content of your submission should look like please read the "Submission Guidelines" at \url{https://www.ieee.uc.edu/eecs-student-journal/} and/or email the editor at execieee@gmail.com.
+
+    % DO NOT EDIT/REMOVE
+    \printbibliography
+\end{document}
